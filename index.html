@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Resume Analyzer</h1>
+    <p class="subtitle">
+  Upload your resume and compare it with a job description to get a match score.
+</p>
+
+
+<div class="card">
+  <label>Upload Resume (PDF)</label>
+  <input type="file" id="resumeInput" accept="application/pdf">
+
+  <label>Job Description</label>
+  <textarea id="jobDesc" placeholder="Paste job description here..."></textarea>
+
+  <button id="analyzeBtn">Analyze Resume</button>
+</div>
+
+<div class="result-card">
+  <h2>Match Score</h2>
+  <p id="score">0%</p>
+
+  <h3>Missing Keywords</h3>
+  <ul id="missing"></ul>
+</div>
+
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
